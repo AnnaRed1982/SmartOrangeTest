@@ -201,7 +201,7 @@ button {
 }
 
 svg {
-  fill: var(--greytext);
+  fill: currentColor;
   display: block;
 }
 
