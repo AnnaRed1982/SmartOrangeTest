@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css"> -->
     <title>PROJECT HOME</title>
+    <link href="./fonts/TTHoves-Light.ttf" rel="stylesheet" />
+    <link href="./fonts/TTHoves-Bold.ttf" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -18,7 +28,7 @@
             height="44"
           />
           <ul class="list nav-list">
-            <li>MAIN</li>
+            <li class="link-active">MAIN</li>
             <li>GALLARY</li>
             <li>PROJECTS</li>
             <li>SERTIFICATES</li>
@@ -27,20 +37,52 @@
         </nav>
       </div>
     </header>
+
     <main>
       <div class="container">
         <!--Hero-->
-        <h1>PROJECT HOME</h1>
-        <button type="button">&larr;</button>
-        <button type="button">&rarr;</button>
-        <p>01/02</p>
-        <img
-          src="./images/hero/Hero_building.jpg"
-          alt="Main building"
-          width="770"
-          height="829"
-        />
-        <button type="button">View &rarr;</button>
+        <section class="hero">
+          <div class="title-box">
+            <h1>PROJECT <span class="h1-grey">HOME</span></h1>
+            <div class="button-box">
+              <button type="button">
+                <span class="button-arrow">&larr;</span>
+              </button>
+              <button type="button" class="button-grey">
+                <!-- <svg
+                  viewBox="0 0 68 32"
+                  width="17"
+                  height="8"
+                  style="fill: currentColor"
+                >
+                  <path
+                    d="M3.325 16c0-0.982 0.796-1.778 1.778-1.778h56.889c0.982 0 1.778 0.796 1.778 1.778s-0.796 1.778-1.778 1.778h-56.889c-0.982 0-1.778-0.796-1.778-1.778z"
+                  />
+                  <path
+                    d="M48.291 2.298c0.694-0.694 1.82-0.694 2.514 0l13.701 13.702-13.701 13.701c-0.694 0.694-1.82 0.694-2.514 0s-0.694-1.82 0-2.514l11.187-11.187-11.187-11.187c-0.694-0.694-0.694-1.82 0-2.514z"
+                  />
+                </svg> -->
+
+                <svg width="17" height="8">
+                  <use href="./images/icons.svg#linkedin" />
+                </svg>
+
+                <!-- <svg width="17" height="8">
+                  <use href="./images/icons.svg#arrow-right"></use>
+                </svg> -->
+              </button>
+            </div>
+            <p class="page-number">01/02</p>
+          </div>
+
+          <img
+            src="./images/hero/Hero_building.jpg"
+            alt="Main building"
+            width="770"
+            height="829"
+          />
+          <!-- <button type="button">View &rarr;</button> -->
+        </section>
 
         <!--About Company-->
         <h2>About company</h2>

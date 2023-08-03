@@ -35,6 +35,8 @@ img {
   --black: #000000;
   --greytext: #333333;
   --greytext-light: #bdbdbd;
+  --button-border: #f2f2f2;
+  --button-background: #f9f9f9;
   /* BACKGROUND */
   /* Icons */
   /* Gradient */
@@ -50,10 +52,11 @@ img {
 body {
   background-color: var(--white);
   color: var(--greytext);
+  font-family: "TTHoves-Light", sans-serif;
   letter-spacing: 2.4px;
   font-size: 12px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 header {
@@ -71,6 +74,16 @@ header {
 }
 
 /* social-icons */
+button {
+  display: inline-block;
+  font-family: inherit;
+  cursor: pointer;
+  position: relative;
+}
+button:hover, button:focus {
+  font-family: inherit;
+}
+
 .container {
   width: 1170px;
   padding-left: 135px;
@@ -104,4 +117,96 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+li {
+  position: relative;
+}
+
+.link-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--greytext);
+}
+
+.link-active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--greytext);
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.title-box {
+  padding-top: 336px;
+}
+
+h1 {
+  color: var(--greytext-light);
+  font-size: 64px;
+  font-weight: 300;
+  margin-bottom: 90px;
+}
+
+.h1-grey {
+  font-family: "TTHoves-Bold", sans-serif;
+  font-weight: 700;
+  color: var(--greytext);
+}
+
+.button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 23px;
+  margin-bottom: 94px;
+}
+
+button {
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  background: var(--white);
+  border: 1px solid var(--button-border);
+  color: var(--greytext);
+  padding: 18px;
+  -webkit-transition: background-color var(--anim), color var(--anim);
+  transition: background-color var(--anim), color var(--anim);
+}
+
+.button-grey {
+  background: var(--button-background);
+}
+
+svg {
+  fill: var(--greytext);
+  display: block;
+}
+
+.page-number {
+  color: var(--greytext-light);
+  font-size: 24px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

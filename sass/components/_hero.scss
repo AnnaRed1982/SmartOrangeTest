@@ -1,0 +1,48 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+}
+.title-box {
+  padding-top: 336px;
+}
+h1 {
+  color: var(--greytext-light);
+  font-size: 64px;
+  font-weight: 300;
+
+  margin-bottom: 90px;
+}
+.h1-grey {
+  font-family: "TTHoves-Bold", sans-serif;
+  font-weight: 700;
+  color: var(--greytext);
+}
+.button-box {
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  margin-bottom: 94px;
+}
+button {
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  background: var(--white);
+  border: 1px solid var(--button-border);
+  color: var(--greytext);
+  padding: 18px;
+  transition: background-color var(--anim), color var(--anim);
+}
+.button-grey {
+  background: var(--button-background);
+}
+svg {
+  fill: var(--greytext);
+  display: block;
+}
+
+.page-number {
+  color: var(--greytext-light);
+  font-size: 24px;
+  font-weight: 400;
+}
