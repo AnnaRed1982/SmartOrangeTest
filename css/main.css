@@ -200,13 +200,13 @@ button {
   background: var(--button-background);
 }
 
-svg {
-  fill: currentColor;
-  display: block;
-}
-
 .page-number {
   color: var(--greytext-light);
   font-size: 24px;
   font-weight: 400;
+}
+
+.svg-roted180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */
