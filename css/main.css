@@ -85,6 +85,11 @@ button:hover, button:focus {
   font-family: inherit;
 }
 
+.svg {
+  fill: currentColor;
+  display: block;
+}
+
 .container {
   width: 1170px;
   padding-left: 135px;
@@ -229,5 +234,4 @@ button {
 
 .page-line {
   fill: var(--line-stroke);
-  display: block;
 }/*# sourceMappingURL=main.css.map */
