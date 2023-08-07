@@ -1,0 +1,39 @@
+.section-about {
+  display: flex;
+  gap: 30px;
+
+  background-color: var(--section-backrgound);
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 70px;
+}
+.box-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.box-right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-inside-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.description {
+  width: 400px;
+
+  color: var(--black);
+  font-size: 16px;
+  letter-spacing: normal;
+
+  line-height: calc(25 / 16); /* 156.25% */
+}
