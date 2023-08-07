@@ -35,13 +35,14 @@ img {
   --black: #000000;
   --greytext: #333333;
   --greytext-light: #bdbdbd;
-  --button-border: #f2f2f2;
-  --button-background: #f9f9f9;
   /* BACKGROUND */
+  --button-background: #f9f9f9;
   /* Icons */
   /* Gradient */
   /* shadow */
   /* border */
+  --button-border: #f2f2f2;
+  --line-stroke: #e0e0e0;
   /* lines */
   /* btn radius */
   /* flex */
@@ -200,13 +201,33 @@ button {
   background: var(--button-background);
 }
 
+.svg-roted180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.page-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 26px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .page-number {
   color: var(--greytext-light);
+  font-family: "TTHoves-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
 }
 
-.svg-roted180 {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.page-line {
+  fill: var(--line-stroke);
+  display: block;
 }/*# sourceMappingURL=main.css.map */
