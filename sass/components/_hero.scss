@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .title-box {
@@ -25,10 +26,10 @@ h1 {
   gap: 23px;
   margin-bottom: 94px;
 }
-button {
+.button-hero {
   display: inline-block;
-  width: 53px;
-  height: 53px;
+  min-width: 53px;
+  min-height: 53px;
   background: var(--white);
   border: 1px solid var(--button-border);
   color: var(--greytext);
@@ -56,4 +57,17 @@ button {
 }
 .page-line {
   fill: var(--line-stroke);
+}
+
+.image-button {
+  position: absolute;
+  left: 400px;
+  bottom: 0;
+  box-shadow: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
 }

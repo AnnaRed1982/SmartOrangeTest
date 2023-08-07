@@ -40,6 +40,7 @@ img {
   /* Icons */
   /* Gradient */
   /* shadow */
+  --shadow: rgba(0, 0, 0, 0.15);
   /* border */
   --button-border: #f2f2f2;
   --line-stroke: #e0e0e0;
@@ -80,6 +81,20 @@ button {
   font-family: inherit;
   cursor: pointer;
   position: relative;
+  background-color: var(--white);
+  min-width: 222px;
+  min-height: 71px;
+  padding: 24px 50px; /*32-2*2 ширина бордера*/
+  font-family: "TTHoves-Regular", sans-serif;
+  font-weight: 400;
+  border: none;
+  outline: transparent;
+  -webkit-box-shadow: 0px 4px 4px var(--shadow);
+          box-shadow: 0px 4px 4px var(--shadow);
+  -webkit-transition: background-color var(--anim), -webkit-box-shadow var(--anim);
+  transition: background-color var(--anim), -webkit-box-shadow var(--anim);
+  transition: background-color var(--anim), box-shadow var(--anim);
+  transition: background-color var(--anim), box-shadow var(--anim), -webkit-box-shadow var(--anim);
 }
 button:hover, button:focus {
   font-family: inherit;
@@ -159,6 +174,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
 }
 
 .title-box {
@@ -190,10 +206,10 @@ h1 {
   margin-bottom: 94px;
 }
 
-button {
+.button-hero {
   display: inline-block;
-  width: 53px;
-  height: 53px;
+  min-width: 53px;
+  min-height: 53px;
   background: var(--white);
   border: 1px solid var(--button-border);
   color: var(--greytext);
@@ -234,4 +250,26 @@ button {
 
 .page-line {
   fill: var(--line-stroke);
+}
+
+.image-button {
+  position: absolute;
+  left: 400px;
+  bottom: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }/*# sourceMappingURL=main.css.map */
