@@ -2,7 +2,11 @@
   display: flex;
   gap: 30px;
 
-  background-color: var(--section-backrgound);
+  background-image: linear-gradient(
+    to bottom,
+    var(--section-backrgound) 74%,
+    var(--white) 74%
+  );
   padding-top: 30px;
   padding-left: 100px;
   padding-right: 70px;
@@ -16,20 +20,21 @@
 .box-right {
   display: flex;
   gap: 30px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
-
+.image-right {
+  padding-top: 30px;
+}
 .box-inside-right {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: baseline;
-  justify-content: center;
+  justify-content: space-between;
 }
-
 .description {
-  width: 400px;
+  width: 395px;
 
   color: var(--black);
   font-size: 16px;
