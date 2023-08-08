@@ -1,0 +1,28 @@
+.title-goals {
+  margin-bottom: 60px;
+}
+.list-goals {
+  display: flex;
+  gap: 200px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.item-goal {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.item-goal-number {
+  color: var(--button-border);
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 200px;
+  font-weight: 900;
+  line-height: 80%;
+}
+.item-goal-descr {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 36px; /* 163.636% */
+}
