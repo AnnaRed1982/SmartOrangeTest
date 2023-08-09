@@ -83,6 +83,13 @@ h2 {
   letter-spacing: normal;
 }
 
+h3 {
+  color: var(--white);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
 .section {
   padding-bottom: 120px;
   /* outline: 1px solid blue;
@@ -109,16 +116,15 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: inherit;
-  cursor: pointer;
-  position: relative;
-  background-color: var(--white);
   min-width: 222px;
   min-height: 71px;
   padding: 24px 50px; /*32-2*2 ширина бордера*/
-  font-weight: 400;
   border: none;
   outline: transparent;
+  font-family: inherit;
+  font-weight: 400;
+  background-color: var(--white);
+  cursor: pointer;
   -webkit-transition: background-color var(--anim), -webkit-box-shadow var(--anim);
   transition: background-color var(--anim), -webkit-box-shadow var(--anim);
   transition: background-color var(--anim), box-shadow var(--anim);
@@ -130,7 +136,17 @@ button:hover, button:focus {
           box-shadow: 0px 4px 4px var(--shadow);
 }
 
-.svg {
+.button-black {
+  background-color: var(--greytext);
+  color: var(--white);
+}
+.button-black:hover, .button-black:focus {
+  font-family: inherit;
+  -webkit-box-shadow: 0px 4px 4px var(--greytext-light);
+          box-shadow: 0px 4px 4px var(--greytext-light);
+}
+
+svg {
   fill: currentColor;
   display: block;
 }
@@ -391,4 +407,52 @@ li {
   font-weight: 400;
   letter-spacing: normal;
   line-height: 36px; /* 163.636% */
+}
+
+.title-projects {
+  margin-bottom: 60px;
+}
+
+.box-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.box-image {
+  position: relative;
+}
+
+.box-title {
+  position: absolute;
+  top: 48px;
+  left: 79px;
+}
+
+.image-title {
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.image-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white);
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-right {
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

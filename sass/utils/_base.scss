@@ -24,6 +24,12 @@ h2 {
   font-weight: 300;
   letter-spacing: normal;
 }
+h3 {
+  color: var(--white);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: normal;
+}
 .section {
   // padding-top: 120px;
   padding-bottom: 120px;
@@ -85,34 +91,39 @@ button {
   gap: 12px;
   align-items: center;
   justify-content: center;
-  font-family: inherit;
-  cursor: pointer;
-  position: relative;
-
-  background-color: var(--white);
 
   min-width: 222px;
   min-height: 71px;
   padding: 24px 50px; /*32-2*2 ширина бордера*/
-  
-  font-weight: 400;
-
-  // border-radius: var(--btnradius);
   border: none;
   outline: transparent;
-
   // box-shadow: 0px 4px 4px var(--shadow);
+
+  font-family: inherit;
+  font-weight: 400;
+  background-color: var(--white);
+
+  cursor: pointer;
 
   transition: background-color var(--anim), box-shadow var(--anim);
 
   &:hover,
   &:focus {
     font-family: inherit;
-    // background-color: var(--blueactive);
     box-shadow: 0px 4px 4px var(--shadow);
   }
 }
-.svg {
+.button-black {
+  background-color: var(--greytext);
+  color: var(--white);
+
+  &:hover,
+  &:focus {
+    font-family: inherit;
+    box-shadow: 0px 4px 4px var(--greytext-light);
+  }
+}
+svg {
   fill: currentColor;
   display: block;
 }

@@ -1,0 +1,36 @@
+.title-projects {
+  margin-bottom: 60px;
+}
+.box-images {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.box-image {
+  position: relative;
+}
+.box-title {
+  position: absolute;
+  top: 48px;
+  left: 79px;
+}
+.image-title {
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.image-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  color: var(--white);
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-right {
+  margin-left: auto;
+}
