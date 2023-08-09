@@ -14,15 +14,17 @@
   flex-direction: column;
   gap: 10px;
 
-  //   align-items: center;
-  //   justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .form-input {
   height: 44px;
   //   width: calc(391px - 21px);
-  width: calc(1170px - 749px - 30px - 21px);
+  width: 370px;
   background-color: var(--input-background);
+  resize: none;
   border: none;
+  //   border-width: 1px;
 
   padding-left: 21px;
 
@@ -34,15 +36,14 @@
 
   &:hover,
   &:focus {
-    border: 1px solid var(--greytext-placehold);
-    outline: transparent;
+    outline: 1px solid var(--greytext-placehold);
   }
 }
 
 .form--textarea {
   height: calc(145px - 14px);
   resize: none;
-  width: calc(1170px - 749px - 30px - 21px);
+  width: 370px;
   background-color: var(--input-background);
   border: none;
 
@@ -57,8 +58,7 @@
 
   &:hover,
   &:focus {
-    border: 1px solid var(--greytext-placehold);
-    outline: transparent;
+    outline: 1px solid var(--greytext-placehold);
   }
 }
 .textarea-box {

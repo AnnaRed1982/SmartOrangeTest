@@ -493,12 +493,19 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form-input {
   height: 44px;
   width: 370px;
   background-color: var(--input-background);
+  resize: none;
   border: none;
   padding-left: 21px;
   color: var(--greytext-placehold);
@@ -508,8 +515,7 @@ li {
   letter-spacing: 0.56px;
 }
 .form-input:hover, .form-input:focus {
-  border: 1px solid var(--greytext-placehold);
-  outline: transparent;
+  outline: 1px solid var(--greytext-placehold);
 }
 
 .form--textarea {
@@ -527,8 +533,7 @@ li {
   letter-spacing: 0.56px;
 }
 .form--textarea:hover, .form--textarea:focus {
-  border: 1px solid var(--greytext-placehold);
-  outline: transparent;
+  outline: 1px solid var(--greytext-placehold);
 }
 
 .textarea-box {
