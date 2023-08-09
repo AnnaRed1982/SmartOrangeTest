@@ -11,6 +11,12 @@ header {
   padding-top: 29px;
   padding-bottom: 29px;
 }
+footer {
+  background-color: var(--dark-grey);
+  padding-top: 58px;
+  padding-bottom: 24px;
+  color: var(--white);
+}
 h1 {
   color: var(--greytext-light);
   font-size: 64px;

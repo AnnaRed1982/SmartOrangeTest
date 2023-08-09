@@ -36,7 +36,8 @@ img {
   --black: #000000;
   --greytext: #333333;
   --greytext-light: #bdbdbd;
-  --greytext-placehold:#8d8d8d;
+  --greytext-placehold: #8d8d8d;
+  --dark-grey: #2c2c2c;
   /* BACKGROUND */
   --section-backrgound: #fbfbfb;
   --button-background: #f9f9f9;
@@ -68,6 +69,13 @@ body {
 header {
   padding-top: 29px;
   padding-bottom: 29px;
+}
+
+footer {
+  background-color: var(--dark-grey);
+  padding-top: 58px;
+  padding-bottom: 24px;
+  color: var(--white);
 }
 
 h1 {
@@ -505,7 +513,6 @@ li {
   height: 44px;
   width: 370px;
   background-color: var(--input-background);
-  resize: none;
   border: none;
   padding-left: 21px;
   color: var(--greytext-placehold);
@@ -554,4 +561,43 @@ li {
   line-height: normal;
   margin-bottom: 21px;
   margin-left: 40px;
+}
+
+.box-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 99px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7142857143; /* 171.429% */
+  letter-spacing: 0.42px;
 }/*# sourceMappingURL=main.css.map */
