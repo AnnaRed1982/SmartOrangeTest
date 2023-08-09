@@ -31,10 +31,12 @@ h3 {
   letter-spacing: normal;
 }
 .section {
-  // padding-top: 120px;
   padding-bottom: 120px;
   /* outline: 1px solid blue;
   outline-offset: -1px; */
+}
+.section-title {
+  margin-bottom: 60px;
 }
 .logo {
   // color: var(--blue);
@@ -126,4 +128,14 @@ button {
 svg {
   fill: currentColor;
   display: block;
+}
+a {
+  cursor: pointer;
+
+  transition: background-color var(--anim), box-shadow var(--anim);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px var(--greytext-light);
+  }
 }

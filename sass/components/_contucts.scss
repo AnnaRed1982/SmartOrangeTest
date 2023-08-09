@@ -1,0 +1,81 @@
+.section-title-contacts {
+  margin-bottom: 22px;
+}
+.box-form {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  //   align-items: center;
+  //   justify-content: center;
+}
+.form-input {
+  height: 44px;
+  //   width: calc(391px - 21px);
+  width: calc(1170px - 749px - 30px - 21px);
+  background-color: var(--input-background);
+  border: none;
+
+  padding-left: 21px;
+
+  color: var(--greytext-placehold);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--greytext-placehold);
+    outline: transparent;
+  }
+}
+
+.form--textarea {
+  height: calc(145px - 14px);
+  resize: none;
+  width: calc(1170px - 749px - 30px - 21px);
+  background-color: var(--input-background);
+  border: none;
+
+  padding-left: 21px;
+  padding-top: 14px;
+
+  color: var(--greytext-placehold);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--greytext-placehold);
+    outline: transparent;
+  }
+}
+.textarea-box {
+  position: relative;
+}
+.textarea-svg {
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+.form-underline {
+  color: var(--greytext);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+  line-height: normal;
+
+  margin-bottom: 21px;
+  margin-left: 40px;
+}
