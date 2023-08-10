@@ -563,7 +563,14 @@ li {
   margin-left: 40px;
 }
 
-.box-left {
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 157px;
+}
+
+.footer-box-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,4 +607,29 @@ li {
   font-weight: 500;
   line-height: 1.7142857143; /* 171.429% */
   letter-spacing: 0.42px;
+}
+
+address {
+  font-style: normal;
+}
+
+.address-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 33px;
+}
+
+.address-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=main.css.map */
