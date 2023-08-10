@@ -1,3 +1,8 @@
+.footer-main-box {
+  border-bottom: 1px solid var(--greytext-footer);
+  padding-bottom: 60px;
+  margin-bottom: 24px;
+}
 .footer-box {
   display: flex;
   gap: 157px;
@@ -53,4 +58,13 @@ address {
 .social-list {
   display: flex;
   gap: 40px;
+}
+.footer-underline {
+  text-align: center;
+  color: var(--greytext-footer);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: normal;
+
+  font-weight: 400;
+  line-height: calc(22 / 12); /* 183.333% */
 }

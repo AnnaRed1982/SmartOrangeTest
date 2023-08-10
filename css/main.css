@@ -38,6 +38,7 @@ img {
   --greytext-light: #bdbdbd;
   --greytext-placehold: #8d8d8d;
   --dark-grey: #2c2c2c;
+  --greytext-footer: rgba(200, 200, 200, 0.5);
   /* BACKGROUND */
   --section-backrgound: #fbfbfb;
   --button-background: #f9f9f9;
@@ -563,6 +564,12 @@ li {
   margin-left: 40px;
 }
 
+.footer-main-box {
+  border-bottom: 1px solid var(--greytext-footer);
+  padding-bottom: 60px;
+  margin-bottom: 24px;
+}
+
 .footer-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -657,4 +664,13 @@ address {
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
+}
+
+.footer-underline {
+  text-align: center;
+  color: var(--greytext-footer);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: normal;
+  font-weight: 400;
+  line-height: 1.8333333333; /* 183.333% */
 }/*# sourceMappingURL=main.css.map */
