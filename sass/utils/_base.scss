@@ -38,60 +38,9 @@ h3 {
 }
 .section {
   padding-bottom: 120px;
-  /* outline: 1px solid blue;
-  outline-offset: -1px; */
 }
 .section-title {
   margin-bottom: 60px;
-}
-.logo {
-  // color: var(--blue);
-  // font-family: 'Raleway', sans-serif;
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
-
-  // margin-right: 93px;
-  /* background-color: greenyellow; */
-}
-.title {
-  // color: var(--accentblack);
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.17;
-  // text-align: center;
-
-  // margin-bottom: 50px;
-}
-/* social-icons */
-.social {
-  // display: flex;
-  // justify-content: center;
-  // gap: 10px;
-}
-.social__link {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-
-  // width: 44px;
-  // height: 44px;
-
-  // color: var(--iconcolor);
-  // background-color: var(--white);
-  // border-radius: 50%;
-
-  // transition: background-color var(--anim), color var(--anim);
-
-  // &:hover,
-  // &:focus {
-  //   background-color: var(--blue);
-  //   color: var(--white);
-  // }
-}
-.social__icon {
-  // fill: currentColor;
-  // display: block;
 }
 button {
   display: flex;
@@ -102,10 +51,9 @@ button {
 
   min-width: 222px;
   min-height: 71px;
-  padding: 24px 50px; /*32-2*2 ширина бордера*/
+  padding: 24px 50px;
   border: none;
   outline: transparent;
-  // box-shadow: 0px 4px 4px var(--shadow);
 
   font-family: inherit;
   font-weight: 400;
@@ -137,11 +85,5 @@ svg {
 }
 a {
   cursor: pointer;
-
   transition: background-color var(--anim), box-shadow var(--anim);
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 4px 4px var(--greytext-light);
-  }
 }
